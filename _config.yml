@@ -1,0 +1,5 @@
+name: Eli
+markdown: redcarpet
+highlighter: null # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", "README.md", "_scripts", "_scss", "Gemfile", "LICENSE", "gemfile", "Gemfile.lock"]
+url: "https://github.com/Ely-Nathan/Login-Signup"

@@ -1,0 +1,7 @@
+
+\.jekyll-metadata
+.DS_Store
+node_modules/
+Gemfile.lock
+package-lock.json
+.eslintrc.js
