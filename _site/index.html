@@ -20,7 +20,34 @@
 
 <body>
 
-	<h1>Hello World - login 2!</h1>
+	<h1 class="text-center">Login or signup</h1>
+
+<div class="wrapper">
+  <div class="form">
+    <div class="form__tabs">
+      <div class="tab active">
+        <a href="#" data-target="signup" class="tab-text">Signup</a>
+      </div>
+      <div class="tab">
+        <a href="#" data-target="login" class="tab-text">Login</a>
+      </div>
+      <div class="tab">
+        <a href="#" data-target="forgot" class="tab-text">Forgot password</a>
+      </div>
+    </div>
+    <div class="form__content">
+      <div class="form-variant form-variant--signup active" data-id="signup">
+        Signup
+      </div>
+      <div class="form-variant form-variant--login" data-id="login">
+        Login
+      </div>
+      <div class="form-variant form-variant--forgot" data-id="forgot">
+        Forgot
+      </div>
+    </div>
+  </div>
+</div>
 
 
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/snap.svg-min.js"></script>
