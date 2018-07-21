@@ -120,17 +120,17 @@ h3 {
 
           &.input-icon {
             &--name {
-              background: url("/assets/images/user.svg") no-repeat 6px 6px;
+              background: url("../images/user.svg") no-repeat 6px 6px;
               background-size: 30px 30px;
             }
 
             &--email {
-              background: url("/assets/images/email.svg") no-repeat 6px 6px;
+              background: url("../images/email.svg") no-repeat 6px 6px;
               background-size: 30px 30px;
             }
 
             &--password {
-              background: url("/assets/images/password.svg") no-repeat 6px 6px;
+              background: url("../images/password.svg") no-repeat 6px 6px;
               background-size: 30px 30px;
             }
           }
@@ -138,8 +138,6 @@ h3 {
 
         input:-webkit-autofill {
           -webkit-box-shadow: 0 0 0 30px white inset;
-          background: url("/assets/images/email.svg") no-repeat 6px 6px;
-          background-size: 30px 30px;
         }
 
         &.active {
