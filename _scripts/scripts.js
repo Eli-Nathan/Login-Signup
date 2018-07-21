@@ -1,31 +1,24 @@
 window.addEventListener('load', function() {
-  let theTabs = document.querySelectorAll('[data-target]');
-  let i;
+  let theTabs = document.querySelectorAll('[data-target]'),
+      contentPanes = document.querySelectorAll('[data-id]'),
+      i;
 
-  function theTabClicks(tabClickEvent) {
-    let clickedTab = tabClickEvent.currentTarget;
-    let tabParent =
-    tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
-    let theTabs = tabParent.querySelectorAll('[data-target]');
+  function theTabClicks(e) {
+    e.preventDefault();
+    let clickedTab = e.target,
+        activePaneId = clickedTab.getAttribute('data-target'),
+        activePane = document.querySelectorAll('[data-id="' + activePaneId + '"]');
+
     for (i = 0; i < theTabs.length; i++) {
       theTabs[i].classList.remove('active');
-    }
-
-    clickedTab.classList.add('active');
-    tabClickEvent.preventDefault();
-    let contentPanes = tabParent.querySelectorAll('[data-id]');
-    for (i = 0; i < contentPanes.length; i++) {
       contentPanes[i].classList.remove('active');
     }
-    let anchorReference = tabClickEvent.target;
-    let activePaneId = anchorReference.getAttribute('data-target');
-    // console.log(activePaneId + " | " + activePane);
-    let activePane =
-    tabParent.querySelectorAll('[data-id="' + activePaneId + '"]');
+    clickedTab.classList.add('active');
+
     activePane[0].classList.add('active');
   }
 
-  for (let i = 0; i < theTabs.length; i++) {
-    theTabs[i].addEventListener('click', theTabClicks)
+  for (i = 0; i < theTabs.length; i++) {
+    theTabs[i].addEventListener('click', theTabClicks);
   }
 });

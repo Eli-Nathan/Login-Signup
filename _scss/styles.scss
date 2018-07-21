@@ -37,18 +37,16 @@ h1, h2, h3 {
         flex: 3;
         align-items: center;
         border-bottom: 5px solid #e5e5e5;
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #2a2a2a;
+        transition-delay: .1s;
 
         &.active {
           border-color: #37A1A8;
-        }
-
-        .tab-text {
-          align-self: center;
-          flex: 1;
-          text-align: center;
-          justify-content: center;
-          text-decoration: none;
-          color: #2a2a2a;
+          transition: .3s;
         }
       }
     }
@@ -58,7 +56,7 @@ h1, h2, h3 {
         display: none;
 
         &.active {
-          display: block;
+          display:block;
         }
       }
     }
