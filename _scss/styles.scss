@@ -34,7 +34,6 @@ h3 {
     @media(min-width:992px) {
       width: 40%;
     }
-
     /*
       * Flexbox layout for tabs to ensure they fit
       * nicely side by side and equally spaced
@@ -63,7 +62,6 @@ h3 {
         @media(min-width:768px) {
           font-size: 20px;
         }
-
         // Round top left and right
         &:first-child {
           border-top-left-radius: 4px;
@@ -72,7 +70,6 @@ h3 {
         &:last-child {
           border-top-right-radius: 4px;
         }
-
         // Active styles
         &.active {
           background: #fff;
@@ -85,7 +82,6 @@ h3 {
 
     &__content {
       padding: 0 20px 20px;
-
       // Styling for each form container
       .form-variant {
         display: none;
@@ -93,16 +89,13 @@ h3 {
         @media(min-width:768px) {
           padding: 0 50px 50px;
         }
-
         // Active form
         &.active {
           display: block;
         }
-
         // Input group styles
         .input-group {
           position: relative;
-
           // Label styles
           label {
             color: $blue;
@@ -110,23 +103,29 @@ h3 {
             display: block;
             text-transform: uppercase;
             font-size: 14px;
+            font-weight: 500;
           }
-
           // Actual input field
           .input-field {
             display: block;
-            width: calc(100% - 53px);
+            width: calc(100% - 59px);
+            @media(min-width:768px) {
+              width: calc(100% - 53px);
+            }
             height: 40px;
             padding-left: 50px;
             margin-bottom: 6px;
             border: 1px solid $blue;
-
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-size:1em;
+            border-radius: 0px!important;
             // Remove nasty outlline on focus
             &:focus {
               outline: none;
               border-bottom-width: 5px;
             }
-
             // Submit input styles
             &--submit {
               width: 100%;
@@ -136,24 +135,24 @@ h3 {
               border: none;
               margin-top: 12px;
               padding: 0;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
             }
           }
-
           // Icon styles
           .input-icon {
             position: absolute;
             top: 18px;
             left: 5px;
-            width:30px;
+            width: 30px;
             height: 30px;
           }
         }
-
         // Remove nasty yellow background to autofilled inputs
         input:-webkit-autofill {
           -webkit-box-shadow: 0 0 0 30px white inset;
         }
-
         // Forgot password link
         .forgot-link {
           display: block;
