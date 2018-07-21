@@ -20,47 +20,105 @@
 
 <body>
 
-	<div class="wrapper">
+	<!-- Main wrapper -->
+<div class="wrapper">
+  <!-- Form box -->
   <div class="form">
+    <!-- Tabs -->
     <div class="form__tabs">
       <a href="#" data-target="signup" class="tab active">Signup</a>
       <a href="#" data-target="login" class="tab">Login</a>
-    </div>
+    </div> <!-- ./ Tabs -->
+
+    <!-- Main form wrapper -->
     <div class="form__content">
+
+      <!-- First form (tab content) -->
       <div class="form-variant form-variant--signup active" data-id="signup">
         <h2 class="text-center">Signup</h2>
-        <form autocomplete="off">
-          <label for="signup-name">Your name</label>
-          <input type="text" id="signup-name" name="name" placeholder="Your name" class="input-field input-icon input-icon--name">
-          <label for="signup-email">Your email</label>
-          <input type="email" id="signup-email" name="email" placeholder="Your email" class="input-field input-icon input-icon--email">
-          <label for="signup-password">New password</label>
-          <input type="password" id="signup-password" name="password" placeholder="Your password" class="input-field input-icon input-icon--password">
-          <input type="submit" class="input-field input-field--submit" value="Sign up">
+        <form>
+          <!-- Input group (Name) -->
+          <div class="input-group input-group-icon">
+            <label for="signup-name">Your name</label>
+            <input type="text" id="signup-name" name="name" placeholder="Your name" class="input-field">
+            <div class="input-icon">
+              <object type="image/svg+xml" data="assets/images/user.svg" class="input-icon input-icon--name"></object>
+            </div>
+          </div>
+          <!-- Input group (Email) -->
+          <div class="input-group input-group-icon">
+            <label for="signup-email">Your email</label>
+            <input type="email" id="signup-email" name="email" placeholder="Your email" class="input-field">
+            <div class="input-icon">
+              <object type="image/svg+xml" data="assets/images/email.svg" class="input-icon input-icon--email"></object>
+            </div>
+          </div>
+          <!-- Input group (Password) -->
+          <div class="input-group input-group-icon">
+            <label for="signup-password">New password</label>
+            <input type="password" id="signup-password" name="password" placeholder="Your password" class="input-field">
+            <div class="input-icon">
+              <object type="image/svg+xml" data="assets/images/password.svg" class="input-icon input-icon--password"></object>
+            </div>
+          </div>
+          <!-- Input group (Submit) -->
+          <div class="input-group">
+            <input type="submit" class="input-field input-field--submit" value="Sign up">
+          </div>
         </form>
-      </div>
+      </div> <!-- ./ First form (tab content) -->
+
+      <!-- Second form (tab content) -->
       <div class="form-variant form-variant--login" data-id="login">
         <h2 class="text-center">Login</h2>
         <form>
-          <label for="login-email">Email</label>
-          <input type="email" id="login-email" name="email" placeholder="Your email" class="input-field input-icon input-icon--email">
-          <label for="login-password">Password</label>
-          <input type="password" id="login-password" name="password" placeholder="Your password" class="input-field input-icon input-icon--password">
-          <input type="submit" class="input-field input-field--submit" value="Login">
+          <!-- Input group (Email) -->
+          <div class="input-group input-group-icon">
+            <label for="login-email">Your email</label>
+            <input type="email" id="signup-email" name="email" placeholder="Your email" class="input-field">
+            <div class="input-icon">
+              <object type="image/svg+xml" data="assets/images/email.svg" class="input-icon input-icon--email"></object>
+            </div>
+          </div>
+          <!-- Input group (Password) -->
+          <div class="input-group input-group-icon">
+            <label for="login-password">Password</label>
+            <input type="password" id="signup-password" name="password" placeholder="Your password" class="input-field">
+            <div class="input-icon">
+              <object type="image/svg+xml" data="assets/images/password.svg" class="input-icon input-icon--password"></object>
+            </div>
+          </div>
+          <!-- Input group (Submit )-->
+          <div class="input-group">
+            <input type="submit" class="input-field input-field--submit" value="Login">
+          </div>
         </form>
+        <!-- Forgot password link -->
         <a href="#" data-target="forgot" class="tab text-center forgot-link">Forgot password?</a>
-      </div>
+      </div> <!-- ./ Second form (tab content) -->
+
+      <!-- Third form (tab content) -->
       <div class="form-variant form-variant--forgot" data-id="forgot">
         <h2 class="text-center">Forgot your password?</h2>
         <form>
-          <label for="forgot-email">Email</label>
-          <input type="email" id="forgot-email" name="email" placeholder="Your email" class="input-field input-icon input-icon--email">
-          <input type="submit" class="input-field input-field--submit" value="Recover password">
+          <!-- Input group (Email) -->
+          <div class="input-group input-group-icon">
+            <label for="login-email">Your email</label>
+            <input type="email" id="forgot-email" name="email" placeholder="Your email" class="input-field">
+            <div class="input-icon">
+              <object type="image/svg+xml" data="assets/images/email.svg" class="input-icon input-icon--email"></object>
+            </div>
+          </div>
+          <!-- Input group (Submit) -->
+          <div class="input-group">
+            <input type="submit" class="input-field input-field--submit" value="Recover password">
+          </div>
         </form>
-      </div>
-    </div>
-  </div>
-</div>
+      </div> <!-- ./ Third form (tab content) -->
+
+    </div> <!-- ./ Main form wrapper -->
+  </div> <!-- ./ Form box -->
+</div> <!-- ./ Main wrapper -->
 
 
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/snap.svg-min.js"></script>
