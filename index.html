@@ -4,25 +4,44 @@ title: Login & Signup
 meta_description: Tabbed login form
 current: home
 ---
-<h1 class="text-center">Login or signup</h1>
-
 <div class="wrapper">
   <div class="form">
     <div class="form__tabs">
       <a href="#" data-target="signup" class="tab active">Signup</a>
       <a href="#" data-target="login" class="tab">Login</a>
-      <!-- <a href="#" data-target="forgot" class="tab">Forgot password</a> -->
     </div>
     <div class="form__content">
       <div class="form-variant form-variant--signup active" data-id="signup">
-        Signup
+        <h2 class="text-center">Signup</h2>
+        <form autocomplete="off">
+          <label for="signup-name">Your name</label>
+          <input type="text" id="signup-name" name="name" placeholder="Your name" class="input-field input-icon input-icon--name">
+          <label for="signup-email">Your email</label>
+          <input type="email" id="signup-email" name="email" placeholder="Your email" class="input-field input-icon input-icon--email">
+          <label for="signup-password">New password</label>
+          <input type="password" id="signup-password" name="password" placeholder="Your password" class="input-field input-icon input-icon--password">
+          <input type="submit" class="input-field input-field--submit" value="Sign up">
+        </form>
       </div>
       <div class="form-variant form-variant--login" data-id="login">
-        Login
+        <h2 class="text-center">Login</h2>
+        <form>
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" name="email" placeholder="Your email" class="input-field input-icon input-icon--email">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="password" placeholder="Your password" class="input-field input-icon input-icon--password">
+          <input type="submit" class="input-field input-field--submit" value="Login">
+        </form>
+        <a href="#" data-target="forgot" class="tab text-center forgot-link">Forgot password?</a>
       </div>
-      <!-- <div class="form-variant form-variant--forgot" data-id="forgot">
-        Forgot
-      </div> -->
+      <div class="form-variant form-variant--forgot" data-id="forgot">
+        <h2 class="text-center">Forgot your password?</h2>
+        <form>
+          <label for="forgot-email">Email</label>
+          <input type="email" id="forgot-email" name="email" placeholder="Your email" class="input-field input-icon input-icon--email">
+          <input type="submit" class="input-field input-field--submit" value="Recover password">
+        </form>
+      </div>
     </div>
   </div>
 </div>
